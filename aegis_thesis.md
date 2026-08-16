@@ -21,7 +21,7 @@ Muhammad Haris
 
 2026-BSAI-F2022376040
 
-Bachelor of Science in Artificial Intelligence
+BS Artificial Intelligence
 
 Supervised by: Usama Ahmed
 
@@ -42,7 +42,7 @@ Muhammad Haris
 
 2026-BSAI-F2022376040
 
-Submitted in partial fulfillment of the requirements for the Degree of Bachelor of Science in Artificial Intelligence, University of Management and Technology, Lahore.
+Submitted in partial fulfillment of the requirements for the Degree of BS Artificial Intelligence, University of Management and Technology, Lahore.
 
 Supervised by: Usama Ahmed
 Assistant Professor, Department of Artificial Intelligence
@@ -57,7 +57,7 @@ Assistant Professor, Department of Artificial Intelligence
 
 # DECLARATION
 
-I, Muhammad Haris (2026-BSAI-F2022376040), student of Bachelor of Science in Artificial Intelligence, Session 2022–2026, hereby declare that the matter printed in this thesis titled *Aegis.AI: AI Governance Platform* is my own independent research work and has not been printed, published, or submitted as research work, dissertation, or publication in any form in any university, research institution, or elsewhere in Pakistan or abroad.
+I, Muhammad Haris (2026-BSAI-F2022376040), student of BS Artificial Intelligence, Session 2022–2026, hereby declare that the matter printed in this thesis titled *Aegis.AI: AI Governance Platform* is my own independent research work and has not been printed, published, or submitted as research work, dissertation, or publication in any form in any university, research institution, or elsewhere in Pakistan or abroad.
 
 This thesis represents the independent scholarly research contribution of Muhammad Haris. The Aegis.AI platform was developed collaboratively as a Final Year Project by a three-member team (Muhammad Haris, Ahmed Abdullah Khan, and Farhana Minhas) under the supervision of Usama Ahmed. The research design, regulatory analysis, system architecture, evaluation methodology, and all scholarly content of this thesis are solely the contribution of Muhammad Haris. 
 
@@ -124,7 +124,7 @@ Muhammad Haris additionally founded **Axomify LLC** (Teaneck, NJ, USA), a techno
 
 # CERTIFICATE OF APPROVAL
 
-Accepted by the Faculty of the Department of Artificial Intelligence, School of Systems and Technology, University of Management and Technology, Lahore, in partial fulfillment of the requirements for the degree of Bachelor of Science in Artificial Intelligence.
+Accepted by the Faculty of the Department of Artificial Intelligence, School of Systems and Technology, University of Management and Technology, Lahore, in partial fulfillment of the requirements for the degree of BS Artificial Intelligence.
 
 **Supervisor**
 
@@ -153,7 +153,7 @@ Date: June 2026
 
 # CERTIFICATE BY SUPERVISOR
 
-I certify that I have read *"Aegis.AI: AI Governance Platform"* by Muhammad Haris, and that in my opinion this work meets the criteria for approving a thesis submitted in partial fulfillment of the requirements for the Bachelor of Science degree in Artificial Intelligence at the University of Management and Technology, Lahore.
+I certify that I have read *"Aegis.AI: AI Governance Platform"* by Muhammad Haris, and that in my opinion this work meets the criteria for approving a thesis submitted in partial fulfillment of the requirements for the degree of BS Artificial Intelligence at the University of Management and Technology, Lahore.
 
 **Supervisor: Usama Ahmed**
 Assistant Professor
