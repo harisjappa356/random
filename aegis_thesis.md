@@ -1417,7 +1417,7 @@ flowchart TB
 
 ## 4.1 Development Environment and Toolchain
 
-The Aegis.AI platform was developed across twelve two-week Agile sprints spanning November 2025 through May 2026, employing a disciplined software engineering methodology rooted in the Agile Manifesto (Beck et al., 2001) and adapted from Scrum (Schwaber and Sutherland, 2020). Functional requirements were decomposed into user stories with testable acceptance criteria and estimated using story points (Cohn, 2004). Development was coordinated across a three-member team using a GitHub-hosted monorepo with branch-per-feature workflow, pull request reviews, and automated linting and type-checking on every commit.
+The Aegis.AI platform was developed across twelve two-week Agile sprints spanning November 2025 through May 2026, employing a disciplined software engineering methodology rooted in the Agile Manifesto (Beck et al., 2001) and adapted from Scrum (Schwaber and Sutherland, 2020). Functional requirements across the platform were formalized into 58 user stories with testable acceptance criteria and estimated using relative story points (Cohn, 2004), as fully catalogued in Appendix B (Table B.1). Development was coordinated across twelve two-week iterations, with the complete velocity metrics, committed story points, and sprint delivery milestones documented in the Sprint Backlog Summary in Appendix A (Table A.1). Development followed a GitHub-hosted monorepo with branch-per-feature workflow, pull request peer reviews, and automated linting and type-checking on every commit.
 
 The development environment was standardized using Docker Compose to ensure environment consistency across researchers' local machines and the CI/CD pipeline. Node.js v22.x with TypeScript v5.x strict mode was configured for the backend, enforcing strong static typing across all API route handlers, middleware components, and Sequelize model definitions. The frontend was initialized using Vite 6.x as the build tool, chosen for its sub-second Hot Module Replacement speed and native ESM support. The Python EvalServer was initialized with a virtual environment managed by Poetry, ensuring deterministic dependency resolution for the DeepEval and FastAPI dependencies.
 
@@ -1494,7 +1494,7 @@ The frontend Single Page Application was implemented using React 18.3.1 with Con
 
 ## 4.3 Backend API Implementation
 
-Figure 4.2 illustrates the user authentication and JWT generation sequence flow. Table 4.2 catalogs the primary REST route modules implemented across the backend service.
+Figure 4.2 illustrates the user authentication and JWT generation sequence flow. Table 4.2 catalogs the primary REST route modules implemented across the backend service. A comprehensive specification of all 60 backend API endpoints, including HTTP verbs, route paths, authentication requirements, RBAC permissions, and operational descriptions, is provided in Appendix D (Table D.1).
 
 *Figure 4.2: User Authentication and JWT Generation Sequence Diagram, Illustrating Bcrypt Password Hash Verification, Scoped Token Issuance, and Client-Side State Hydration.*
 
@@ -1550,7 +1550,7 @@ All route handlers follow a consistent error handling pattern using a custom `Ap
 
 ## 4.4 Database Layer Implementation
 
-Figure 4.3 details the multi-tenant database routing and approval engine class structure, while Figure 4.4 traces the sequence of cross-schema isolation verification during use case submission. The chronological database migration sequence is summarized in Table 4.3.
+Figure 4.3 details the multi-tenant database routing and approval engine class structure, while Figure 4.4 traces the sequence of cross-schema isolation verification during use case submission. The chronological database migration sequence is summarized in Table 4.3. The complete relational data model, encompassing 21 core tables, primary/foreign key constraints, and JSONB audit structures across public and tenant schemas, is catalogued in Appendix E (Table E.1).
 
 *Figure 4.3: Multi-Tenant Database Routing and Approval Engine Class Diagram, Defining TenantMiddleware Context Switching, Dynamic SQL Schema Isolation, and Approval Step Rule Evaluators.*
 
@@ -1849,7 +1849,7 @@ The evaluation of Aegis.AI was conducted through a multi-dimensional assessment 
 
 **Total Test Coverage.** Across all testing dimensions, 258 test cases were executed (summarized in Table 5.1), achieving a 100% pass rate. The platform achieved an overall system accuracy of 99% across all evaluated functional dimensions.
 
-The evaluation strategy comprised three complementary empirical approaches (Zhu et al., 1997): (1) functional black-box acceptance testing across all 58 user stories (spanning Sprints 1 through 12) using live browser-based User Acceptance Testing (UAT); (2) API performance benchmarking under simulated concurrent organizational load; and (3) security isolation testing to verify strict schema-per-tenant data segregation. Across all twelve sprint iterations, all 58 user stories totaling 329 committed story points achieved Done status (100% delivery rate, as documented in Appendices A and B). All 258 defined system test cases across the twelve sprint test suites passed without regression. Optional third-party cloud credential integrations (such as external enterprise SMTP servers, hosted MLflow tracking servers, and paid LLM API key provisioning) are documented as operational deployment options in Section 6.4.
+The evaluation strategy comprised three complementary empirical approaches (Zhu et al., 1997): (1) functional black-box acceptance testing across all 58 user stories (spanning Sprints 1 through 12) using live browser-based User Acceptance Testing (UAT); (2) API performance benchmarking under simulated concurrent organizational load; and (3) security isolation testing to verify strict schema-per-tenant data segregation. Across all twelve sprint iterations, all 58 user stories totaling 329 committed story points achieved Done status without carryover (a 100% delivery rate, as documented in the Sprint Backlog Summary in Appendix A and User Story Catalogue in Appendix B). All 258 defined system test cases across the twelve sprint test suites passed without regression, with a representative sample of test cases, preconditions, and verification criteria documented in Appendix C (Table C.1). Optional third-party cloud credential integrations (such as external enterprise SMTP servers, hosted MLflow tracking servers, and paid LLM API key provisioning) are documented as operational deployment options in Section 6.4.
 
 ## 5.2 Functional Testing Results
 
