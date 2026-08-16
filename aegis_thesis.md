@@ -282,24 +282,29 @@ University of Management and Technology, Lahore
 
 # LIST OF TABLES
 
-| Table | Title | Chapter / Appendix |
+| Table | Title | Chapter |
 |---|---|---|
 | Table 1 | Summary of EU AI Act Risk Categories | Chapter 2 |
-| Table 2 | Comparative Analysis of Existing AI Governance Platforms | Chapter 2 |
-| Table 3 | React Component Library Structure | Chapter 4 |
-| Table 4 | Sequelize Database Migration Manifest | Chapter 4 |
-| Table 5 | Aegis.AI REST API Endpoint Catalogue Summary | Chapter 4 |
-| Table 6 | Functional Test Suite Execution Summary (Sprints 1–12) | Chapter 5 |
-| Table 7 | Performance Benchmarking Results Under 50-User Simulated Load | Chapter 5 |
-| Table 8 | DeepEval LLM Evaluation Pipeline Validation Results | Chapter 5 |
-| Table 9 | Multi-Tenant Security Isolation Test Results | Chapter 5 |
-| Table 10 | Platform Feature Comparison Matrix | Chapter 5 |
-| Table 11 | Sprint Backlog Summary (Sprints 1–12) | Appendix A |
-| Table 12 | User Story Catalogue Summary (58 User Stories) | Appendix B |
-| Table 13 | System Test Case Summary (258 Test Cases) | Appendix C |
-| Table 14 | API Endpoint Catalogue (60 Route Modules) | Appendix D |
-| Table 15 | Database Schema Overview (Multi-Tenant Architecture) | Appendix E |
-
+| Table 2 | Comparison of Existing AI Governance Platforms | Chapter 2 |
+| Table 3 | Technology Stack Summary | Chapter 3 |
+| Table 4 | User Roles and Permission Matrix | Chapter 3 |
+| Table 5 | EU AI Act Control Categories Implemented in Aegis.AI | Chapter 3 |
+| Table 6 | ISO/IEC 42001 Clause and Annex Mapping | Chapter 3 |
+| Table 7 | NIST AI RMF Function and Subcategory Coverage | Chapter 3 |
+| Table 8 | Risk Scoring Matrix (Formula: L x 1 + S x 3) | Chapter 3 |
+| Table 9 | React Component Library Structure | Chapter 4 |
+| Table 10 | Backend Route Module Catalogue (Selected) | Chapter 4 |
+| Table 11 | Database Migration Sequence (Selected) | Chapter 4 |
+| Table 12 | Functional Test Case Results Summary | Chapter 5 |
+| Table 13 | API Response Time Benchmarks (50 Concurrent Users) | Chapter 5 |
+| Table 14 | PDF Report Generation Performance | Chapter 5 |
+| Table 15 | LLM Evaluation Metric Results (50-Item Test Dataset) | Chapter 5 |
+| Table 16 | Platform Feature Comparison Matrix | Chapter 5 |
+| Table 17 | Sprint Backlog Summary (Sprints 1-12) | Appendices |
+| Table 18 | User Story Catalogue, Aegis.AI v1.0 | Appendices |
+| Table 19 | Sprint Test Case Summary (Representative Sample) | Appendices |
+| Table 20 | Aegis.AI REST API Endpoint Catalogue (Selected) | Appendices |
+| Table 21 | Core Database Tables, Aegis.AI v1.0 Schema (Per Tenant) | Appendices |
 
 # LIST OF FIGURES
 
