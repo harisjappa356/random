@@ -1224,6 +1224,8 @@ Report types available include: EU AI Act Compliance Report (covering all 13 con
 
 ## 3.11 AI Detection and AI-BOM Generator
 
+Figure 3.11 provides the class diagram modeling AI model version lineage, deployment profiles, and hierarchical mapping across the four NIST AI RMF functions (GOVERN, MAP, MEASURE, MANAGE).
+
 *Figure 3.11: AI Model Inventory and NIST AI RMF Domain Class Diagram, Modeling Model Version Lineage, Deployment Profiles, and Hierarchical Mapping Across the Four NIST Functions (GOVERN, MAP, MEASURE, MANAGE).*
 
 ```mermaid
@@ -1278,6 +1280,8 @@ classDiagram
 The AI Detection module integrates with GitHub repository APIs to scan organizational codebases for AI-generated code components and third-party AI library dependencies, generating an AI Bill of Materials (AI-BOM) in both JSON and CSV formats. The AI-BOM concept is directly relevant to EU AI Act Article 11 (technical documentation requirements), which requires providers of high-risk AI systems to document the components and dependencies of their AI systems. Detected AI components are categorized into: pre-trained foundation model integrations, AI/ML library dependencies, AI code generation tool outputs, and AI-generated documentation or datasets.
 
 ## 3.12 Post-Market Monitoring Architecture
+
+Figure 3.12 illustrates the corresponding registration and status synchronization sequence with external MLflow registries and post-market review schedules.
 
 *Figure 3.12: AI Model Registration and NIST RMF Status Synchronization Sequence Diagram, Illustrating Metadata Ingestion, Version Snapshotting, Automated Control Recalculation, and Real-Time Dashboard Updates.*
 
@@ -1662,6 +1666,8 @@ The EvalServer supports three LLM providers: OpenAI (GPT-4, GPT-4o, GPT-3.5-turb
 
 ## 4.6 Background Job Processing
 
+Figure 4.5 presents the class diagram for the EU AI Act framework engine, detailing the 13 regulatory risk categories and granular control lifecycle state handlers.
+
 *Figure 4.5: EU AI Act Framework Engine Class Diagram, Modeling 13 Regulatory Risk Categories, Granular Control Lifecycles, Assessment Questionnaires, and OpenAI Auto-Driver Integrations.*
 
 ```mermaid
@@ -1717,6 +1723,8 @@ All queues are configured with a three-attempt retry policy with exponential bac
 
 ## 4.7 Containerization and Deployment
 
+Figure 4.6 traces the sequence flow of the AI Auto-Driver control auto-fill integration with LLM providers during regulatory documentation workflows.
+
 *Figure 4.6: AI Auto-Driver Regulatory Control Auto-Fill Sequence Diagram, Tracing Automated Context Extraction, LLM Prompt Construction, Implementation Generation, and Progress Percentage Recalculation.*
 
 ```mermaid
@@ -1751,6 +1759,8 @@ Aegis.AI is designed for containerized deployment from the ground up, operationa
 For production-scale Kubernetes deployments, the backend Deployment is configured with a Horizontal Pod Autoscaler (HPA) targeting 70% average CPU utilization, enabling the API tier to scale from a minimum of 3 to a maximum of 10 replicas. PostgreSQL and Redis are deployed as StatefulSets with PersistentVolumeClaims to preserve data across pod restarts. TLS termination is handled by an NGINX Ingress Controller with cert-manager for automatic SSL certificate provisioning and renewal.
 
 ## 4.8 External Service Integrations
+
+Figure 4.7 details the unified quantitative risk management class architecture supporting multi-dimensional risk evaluations across projects, models, and third-party vendors.
 
 *Figure 4.7: Risk Management Architecture Class Diagram, Detailing Unified Quantitative Scoring Across Project, Vendor, and Model Risks, Snapshot Histories, and Recharts Trend Visualization Structures.*
 
