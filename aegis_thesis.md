@@ -57,11 +57,9 @@ Lecturer, Department of Artificial Intelligence
 
 # DECLARATION
 
-I, **Muhammad Haris** (Student ID: **F2022376040** / Reg. No: **2026-BSAI-F2022376040**), student of **BS Artificial Intelligence**, Session 2022–2026, Department of Artificial Intelligence, School of Systems and Technology, University of Management and Technology, Lahore, hereby declare that the research presented in this thesis titled ***Aegis.AI: AI Governance Platform*** is my own independent scholarly work and has not been published or submitted as a thesis, dissertation, or research work in any form in any university, research institution, or academic forum in Pakistan or abroad.
+I, **Muhammad Haris** (Student ID: **F2022376040** / Reg. No: **2026-BSAI-F2022376040**), student of **BS Artificial Intelligence** (Session 2022–2026), Department of Artificial Intelligence, School of Systems and Technology, University of Management and Technology, Lahore, hereby declare that this thesis titled ***Aegis.AI: AI Governance Platform*** is my own independent scholarly work and has not been submitted elsewhere for any degree or publication.
 
-The original concept, core idea, and architectural vision of the Aegis.AI platform originated entirely and exclusively with **Muhammad Haris**. To fulfill the practical engineering scope of the undergraduate degree, the software implementation was developed collaboratively as a Final Year Project by a three-member team—**Muhammad Haris** (F2022376040), **Ahmed Abdullah Khan** (F2022376096), and **Farhana Minhas** (F2022376126)—under the supervision of **Usama Ahmed**, Lecturer, Department of Artificial Intelligence.
-
-This thesis represents the exclusive scholarly contribution and intellectual output of **Muhammad Haris**. The theoretical problem formulation, research design, regulatory harmonization (EU AI Act, ISO/IEC 42001, NIST AI RMF), enterprise architecture, quantitative risk scoring methodology, empirical evaluation, and all written scholarly content in this dissertation are solely and independently authored by Muhammad Haris.
+The original concept, core idea, system architecture, regulatory analysis, and empirical evaluation presented in this dissertation were conceived and authored solely by **Muhammad Haris**. The software platform was developed as a Final Year Project by a three-member team—**Muhammad Haris** (F2022376040), **Ahmed Abdullah Khan** (F2022376096), and **Farhana Minhas** (F2022376126)—under the supervision of **Usama Ahmed**, Lecturer, Department of Artificial Intelligence. A separate, comprehensive Scrum documentation has been created to document the agile software development lifecycle and sprint deliverables of the platform.
 
 Dated: June 2026
 
