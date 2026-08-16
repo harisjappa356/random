@@ -440,6 +440,8 @@ Article 72 establishes the post-market monitoring obligation, requiring provider
 
 The penalties for non-compliance are substantial. Article 99 of the AI Act provides for administrative fines of up to EUR 35 million or 7% of total worldwide annual turnover for violations related to prohibited AI practices, EUR 15 million or 3% for violations of other provisions of the Regulation, and EUR 7.5 million or 1.5% for the supply of incorrect information to notified bodies or national competent authorities.
 
+As summarized in Table 2.1, the EU AI Act establishes a hierarchical risk taxonomy comprising Unacceptable Risk, High Risk, Limited Risk, and Minimal Risk systems, mapping each category to distinct legal compliance and conformity assessment obligations.
+
 *Table 2.1*
 
 *Summary of EU AI Act Risk Categories*
@@ -498,6 +500,8 @@ The commercial market for AI governance platforms has expanded rapidly since 202
 **Vanta** focuses primarily on automated compliance evidence collection for frameworks including SOC 2, ISO 27001, GDPR, and HIPAA, with emerging AI-specific capabilities (Vanta, 2024). It offers limited AI governance depth beyond basic inventory management.
 
 Open-source alternatives in the AI governance space remain nascent and fragmented. MLflow (Zaharia et al., 2018) and Weights & Biases (Biewald, 2020) provide excellent model registry and experiment tracking capabilities but lack any compliance management, risk assessment, or audit reporting functionality. No existing open-source tool provides integrated, multi-framework AI compliance management at the depth required by the EU AI Act or ISO/IEC 42001.
+
+To evaluate the competitive and technological landscape, Table 2.2 provides a systematic comparative evaluation of leading commercial and open-source AI governance solutions against Aegis.AI across key architectural dimensions, including self-hostability, regulatory framework breadth, LLM evaluation capabilities, and licensing models.
 
 *Table 2.2*
 
@@ -577,6 +581,8 @@ The design of Aegis.AI is guided by four foundational architectural principles d
 **Standards-Based Interoperability.** Where possible, Aegis.AI adopts standard data formats, protocols, and architectural design patterns (Gamma et al., 1994) to maximize integration potential and code maintainability. REST APIs with OpenAPI documentation, JWT-based authentication compatible with standard identity providers, and structured JSON/CSV exports for AI-BOM data all reflect this principle.
 
 ## 3.2 High-Level System Architecture
+
+Figure 3.1 illustrates the top-level system context and external integration boundary of Aegis.AI, mapping interactions between authenticated user personas (Admin, Editor, Reviewer, Auditor) and supporting external services. Figure 3.2 presents the corresponding C4 Level 1 deployment topology across the frontend SPA, Express backend API, Python evaluation runtime, and persistent storage infrastructure.
 
 *Figure 3.1: Aegis.AI System Context and External Integration Boundary Architecture, Depicting Interactions Between Four Core RBAC User Roles (Admin, Editor, Reviewer, Auditor) and Six External Dependency Categories (PostgreSQL Multi-Tenant Storage, Redis Job Queues and Pub/Sub, LLM Providers, GitHub Repository Scanner, MLflow Model Metadata Sync, and SMTP Notification Services).*
 
@@ -696,6 +702,8 @@ The system is organized as: a React 18 SPA client communicating via HTTPS/REST/S
 
 ## 3.3 Multi-Tenant Database Architecture
 
+The internal component structure of the Express.js API server is depicted in Figure 3.3 (C4 Level 3), highlighting the sequential middleware pipeline (Auth, TenantContext, RBAC), domain route controllers, and asynchronous event emitters.
+
 *Figure 3.3: Backend Component Architecture (C4 Level 3), Detailing the Express.js API Pipeline, JWT Authentication, Dynamic Tenant Schema Isolation Middleware, RBAC Route Guards, Domain Controllers, and Real-Time Event Publishers.*
 
 ```mermaid
@@ -741,6 +749,8 @@ The architecture maintains a shared `public` schema containing the global tenant
 **Migration Management.** Sequelize migrations are designed to be schema-aware, with a custom migration runner that iterates over all registered tenant schemas and applies pending migrations to each. This ensures that platform updates propagate correctly to all tenants without manual intervention.
 
 ## 3.4 Authentication and Role-Based Access Control
+
+Figure 3.4 models the core domain class hierarchy (C4 Level 4) centering on Organization and Project aggregate roots. System capabilities and role boundaries across these domain entities are formalized in the User Roles and Permission Matrix presented in Table 3.2.
 
 *Figure 3.4: Domain Object Model and Entity Relationships (C4 Level 4), Illustrating Core Class Hierarchies, Aggregate Roots (Organization and Project), Automated Risk Scoring Entities, and Multi-Step Approval Workflow State Machines.*
 
@@ -847,6 +857,8 @@ Aegis.AI implements a stateless JWT-based authentication system (OWASP Foundatio
 
 ## 3.5 Compliance Framework Engine
 
+Figure 3.5 outlines the Clean Architecture layered dependency flow enforcing strict isolation between domain business entities and outer infrastructure adapters. The compliance engine operationalizes major governance instruments through structured control catalogues, as summarized in Table 3.3 (EU AI Act control categories), Table 3.4 (ISO/IEC 42001 clauses and Annex A controls), and Table 3.5 (NIST AI RMF functions and subcategories).
+
 *Figure 3.5: Clean Architecture Layered Dependency Structure, Highlighting Strict Separation Between Inward-Facing Domain Business Rules, Application Services, Data Repositories, and Outward-Facing Infrastructure Adapters.*
 
 ```mermaid
@@ -940,6 +952,8 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 ## 3.6 Risk Management Module Design
 
+Figure 3.6 depicts the complete Entity-Relationship Diagram (ERD) for the multi-tenant relational schema. The quantitative risk scoring methodology implemented across these entities is formalized in the Risk Scoring Matrix shown in Table 3.6.
+
 *Figure 3.6: Entity-Relationship Diagram (ERD) of the Aegis.AI Relational Database Schema, Depicting Shared Global Public Tables and Isolated Schema-Per-Tenant Relational Entities Covering Compliance, Risks, Models, and Audits.*
 
 ```mermaid
@@ -1001,6 +1015,8 @@ Every modification to a risk record, including changes to likelihood, severity, 
 
 ## 3.7 Policy Management Subsystem
 
+Figure 3.7 illustrates the end-to-end execution sequence for multi-step approval workflows, detailing stakeholder submission, dynamic approver resolution, step validation, and real-time SSE alert dispatch.
+
 *Figure 3.7: End-to-End Multi-Step Approval Workflow Execution Sequence, Showing Submission, Dynamic Approver Resolution, State Validation, Automated Audit Logging, and Real-Time SSE Notification Dispatch.*
 
 ```mermaid
@@ -1049,6 +1065,8 @@ The Policy Management Subsystem provides a structured lifecycle for the creation
 Policies can be linked to specific compliance framework controls (creating a traceable evidence chain between policy commitments and regulatory requirements) and to specific project or model risks (establishing documented risk treatment commitments). A pre-loaded library of policy templates is provided covering AI usage policies, data governance policies, model risk policies, LLM deployment guidelines, and incident response procedures. This subsystem directly supports EU AI Act requirements for documented organizational governance commitments and ISO/IEC 42001 Clause 5.2 (AI policy) and Clause 7.5 (documented information management).
 
 ## 3.8 LLM Evaluation Architecture
+
+Figure 3.8 outlines the sequence of events executed during risk record creation and updates, demonstrating automated score recomputation and historical audit logging.
 
 *Figure 3.8: Risk Creation and Recalculation Sequence Diagram, Illustrating Automated Execution of the Formula Risk Score = (Likelihood x 1) + (Severity x 3), Historical Trend Snapshot Logging, and WebSocket Alert Emission.*
 
@@ -1101,6 +1119,8 @@ All metrics produce scores in the range [0, 1], with higher scores indicating be
 **LLM API Key Vault.** Tenant-specific LLM API keys (for OpenAI, Anthropic, and OpenRouter) are stored in an encrypted key vault within the tenant's schema, ensuring that keys are never accessible cross-tenant and are not logged in application logs.
 
 ## 3.9 Real-Time Event Streaming Architecture
+
+Figure 3.9 illustrates the domain object model for organizational policies and third-party vendor tracking, while Figure 3.10 traces the 5-stage policy governance lifecycle sequence from initial draft authoring through formal sign-off and publication.
 
 *Figure 3.9: Policy and Vendor Management Domain Class Diagram, Defining the 5-Stage Policy Lifecycle (Draft, Under Review, Approved, Published, Archived), Vendor Risk Tiering, and Cross-Linked Regulatory Control Mappings.*
 
@@ -1296,7 +1316,7 @@ PMM reviews are triggered automatically by the BullMQ cron scheduler at the freq
 
 ## 3.13 System-Level Data Flow Architecture
 
-The data architecture of Aegis.AI is formalized through two levels of Data Flow Diagrams (DFD) defining system boundaries, data stores, external entities, and data transformation pipelines.
+The global data flow topology of Aegis.AI is formalized through two levels of Data Flow Diagrams: Figure 3.13 (DFD Level 0: System Context Data Flow) and Figure 3.14 (DFD Level 1: Subsystem Data Flow Decomposition), defining system boundaries, data stores, external entities, and data transformation pipelines.
 
 *Figure 3.13: System-Wide Data Flow Diagram (Level 0), Mapping End-to-End Data Exchanges Between Multi-Role Users, External Enterprise Integrations, and the Core Aegis.AI Application Boundary.*
 
@@ -1401,6 +1421,8 @@ The researcher employed a Git Flow-inspired branching model with a permanent `ma
 
 ## 4.2 Frontend Implementation
 
+Figure 4.1 models the authentication and access control class hierarchy, while Table 4.1 details the React component library structure organized across modular feature domains.
+
 *Figure 4.1: Authentication and Access Control Class Hierarchy, Modeling User Identities, Four-Tier RBAC Enforcements, Organization Subscription Tiers, and JWT Validation Interceptors.*
 
 ```mermaid
@@ -1468,6 +1490,8 @@ The frontend Single Page Application was implemented using React 18.3.1 with Con
 
 ## 4.3 Backend API Implementation
 
+Figure 4.2 illustrates the user authentication and JWT generation sequence flow. Table 4.2 catalogs the primary REST route modules implemented across the backend service.
+
 *Figure 4.2: User Authentication and JWT Generation Sequence Diagram, Illustrating Bcrypt Password Hash Verification, Scoped Token Issuance, and Client-Side State Hydration.*
 
 ```mermaid
@@ -1521,6 +1545,8 @@ The Express.js v4 backend is organized as a modular route architecture with 60 i
 All route handlers follow a consistent error handling pattern using a custom `AppError` class that wraps operational errors with HTTP status codes and user-facing messages. All error responses conform to a consistent JSON schema: `{ success: false, error: { code, message, details } }`.
 
 ## 4.4 Database Layer Implementation
+
+Figure 4.3 details the multi-tenant database routing and approval engine class structure, while Figure 4.4 traces the sequence of cross-schema isolation verification during use case submission. The chronological database migration sequence is summarized in Table 4.3.
 
 *Figure 4.3: Multi-Tenant Database Routing and Approval Engine Class Diagram, Defining TenantMiddleware Context Switching, Dynamic SQL Schema Isolation, and Approval Step Rule Evaluators.*
 
@@ -1817,6 +1843,8 @@ The evaluation strategy comprised three complementary empirical approaches (Zhu 
 
 ## 5.2 Functional Testing Results
 
+Figure 5.1 illustrates the LLM evaluation and AI Advisor domain class diagram. Table 5.1 summarizes functional test case execution results across all twelve sprint test suites.
+
 *Figure 5.1: LLM Evaluation and AI Advisor Domain Class Diagram, Defining LLM Judge Metrics (Correctness, Faithfulness, Contextual Relevancy, Hallucination), API Key Vault Entities, and Model Arena Benchmarks.*
 
 ```mermaid
@@ -1901,6 +1929,8 @@ Test coverage was measured at 87% line coverage for backend modules and 82% stat
 
 ## 5.3 Performance Benchmarks
 
+Figure 5.2 details the LLM API key encryption and key vault sequence flow. API response time benchmarks under concurrent organizational load are presented in Table 5.2, and PDF rendering performance benchmarks are detailed in Table 5.3.
+
 *Figure 5.2: LLM API Key Encryption and Management Sequence Diagram, Illustrating AES-256 Key Encryption at Rest, Role-Based Access Enforcement, and Masked Key Verification Flow.*
 
 ```mermaid
@@ -1969,6 +1999,8 @@ The benchmark results demonstrate that Aegis.AI's API tier comfortably satisfies
 **Frontend Load Time.** Frontend initial load time (time to interactive on a standard 50 Mbps connection) was measured at 1.7 seconds using Lighthouse 11 in desktop mode, below the 2-second target. The Vite production bundle, code-split by route, produced a primary bundle size of 312KB gzipped.
 
 ## 5.4 LLM Evaluation Metrics
+
+Figure 5.3 models the reporting engine and AI Trust Center class relationships. Table 5.4 details empirical evaluation metrics achieved across standard LLM evaluation dimensions.
 
 *Figure 5.3: Reporting Engine, Global Search, and AI Trust Center Class Diagram, Modeling Playwright PDF Generation Parameters, Multi-Format Export Pipelines, and Public Trust Center Metric Aggregators.*
 
@@ -2045,6 +2077,8 @@ LLM evaluation benchmark results were generated using the EvalServer against a 5
 The evaluation results demonstrate meaningful performance differences between the evaluated models on governance-relevant tasks. GPT-4o achieves the highest composite performance across all four metrics, with particularly strong faithfulness (0.87) and a low hallucination rate of 9%. The GPT-3.5-turbo baseline exhibits substantially higher hallucination rates (0.24) and bias scores (0.11), supporting a recommendation that organizations exercising high-risk AI governance functions should prefer frontier models. These results illustrate the platform's capacity to generate actionable, evidence-based model selection guidance, a concrete governance outcome enabled by integrating LLM evaluation within the governance workflow.
 
 ## 5.5 Multi-Tenant Security Isolation Verification
+
+Figure 5.4 illustrates the end-to-end PDF compliance report generation sequence flow, tracing asynchronous job creation, HTML document rendering, and artifact delivery.
 
 *Figure 5.4: Multi-Framework Compliance Report Generation Sequence Diagram, Tracing Asynchronous Background Job Scheduling, Data Fetching, Headless Browser PDF Compilation, and Secure Artifact Retrieval.*
 
