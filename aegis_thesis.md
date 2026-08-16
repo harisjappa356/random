@@ -45,7 +45,7 @@ Muhammad Haris
 Submitted in partial fulfillment of the requirements for the Degree of BS Artificial Intelligence, University of Management and Technology, Lahore.
 
 Supervised by: Usama Ahmed
-Assistant Professor, Department of Artificial Intelligence
+Lecturer, Department of Artificial Intelligence
 
 2026
 
@@ -57,13 +57,15 @@ Assistant Professor, Department of Artificial Intelligence
 
 # DECLARATION
 
-I, Muhammad Haris (2026-BSAI-F2022376040), student of BS Artificial Intelligence, Session 2022–2026, hereby declare that the matter printed in this thesis titled *Aegis.AI: AI Governance Platform* is my own independent research work and has not been printed, published, or submitted as research work, dissertation, or publication in any form in any university, research institution, or elsewhere in Pakistan or abroad.
+I, **Muhammad Haris** (Student ID: **F2022376040** / Reg. No: **2026-BSAI-F2022376040**), student of **BS Artificial Intelligence**, Session 2022–2026, Department of Artificial Intelligence, School of Systems and Technology, University of Management and Technology, Lahore, hereby declare that the research presented in this thesis titled ***Aegis.AI: AI Governance Platform*** is my own independent scholarly work and has not been published or submitted as a thesis, dissertation, or research work in any form in any university, research institution, or academic forum in Pakistan or abroad.
 
-This thesis represents the independent scholarly research contribution of Muhammad Haris. The Aegis.AI platform was developed collaboratively as a Final Year Project by a three-member team (Muhammad Haris, Ahmed Abdullah Khan, and Farhana Minhas) under the supervision of Usama Ahmed. The research design, regulatory analysis, system architecture, evaluation methodology, and all scholarly content of this thesis are solely the contribution of Muhammad Haris. 
+The original concept, core idea, and architectural vision of the Aegis.AI platform originated entirely and exclusively with **Muhammad Haris**. To fulfill the practical engineering scope of the undergraduate degree, the software implementation was developed collaboratively as a Final Year Project by a three-member team—**Muhammad Haris** (F2022376040), **Ahmed Abdullah Khan** (F2022376096), and **Farhana Minhas** (F2022376126)—under the supervision of **Usama Ahmed**, Lecturer, Department of Artificial Intelligence.
+
+This thesis represents the exclusive scholarly contribution and intellectual output of **Muhammad Haris**. The theoretical problem formulation, research design, regulatory harmonization (EU AI Act, ISO/IEC 42001, NIST AI RMF), enterprise architecture, quantitative risk scoring methodology, empirical evaluation, and all written scholarly content in this dissertation are solely and independently authored by Muhammad Haris.
 
 Dated: June 2026
 
-**Muhammad Haris** ................................
+**Muhammad Haris** ....................................................
 
 ---
 
@@ -87,7 +89,7 @@ Dated: June 2026
 
 # STATEMENT OF INDIVIDUAL CONTRIBUTION
 
-This thesis is the independent scholarly work of **Muhammad Haris** (2026-BSAI-F2022376040). The Aegis.AI platform was conceived and developed as a Final Year Project within a three-member team (Muhammad Haris, Ahmed Abdullah Khan, and Farhana Minhas) under the supervision of Usama Ahmed, Assistant Professor, Department of Artificial Intelligence, University of Management and Technology, Lahore. 
+This thesis is the independent scholarly work of **Muhammad Haris** (Student ID: **F2022376040** / Reg. No: **2026-BSAI-F2022376040**). The original concept, core idea, and architectural vision of the Aegis.AI platform originated entirely and exclusively with **Muhammad Haris**. The platform's software implementation was developed collaboratively as a Final Year Project by a three-member development team—**Muhammad Haris** (F2022376040), **Ahmed Abdullah Khan** (F2022376096), and **Farhana Minhas** (F2022376126)—under the supervision of **Usama Ahmed**, Lecturer, Department of Artificial Intelligence, University of Management and Technology, Lahore. 
 
 Within this project, Muhammad Haris served in the following distinct capacities:
 
@@ -129,7 +131,7 @@ Accepted by the Faculty of the Department of Artificial Intelligence, School of 
 **Supervisor**
 
 Usama Ahmed
-Assistant Professor
+Lecturer
 Department of Artificial Intelligence, UMT
 
 **Internal Examiner**
@@ -156,7 +158,7 @@ Date: June 2026
 I certify that I have read *"Aegis.AI: AI Governance Platform"* by Muhammad Haris, and that in my opinion this work meets the criteria for approving a thesis submitted in partial fulfillment of the requirements for the degree of BS Artificial Intelligence at the University of Management and Technology, Lahore.
 
 **Supervisor: Usama Ahmed**
-Assistant Professor
+Lecturer
 Department of Artificial Intelligence
 University of Management and Technology, Lahore
 
