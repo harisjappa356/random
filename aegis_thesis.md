@@ -282,29 +282,24 @@ University of Management and Technology, Lahore
 
 # LIST OF TABLES
 
-| Table | Title | Page |
+| Table | Title | Chapter / Appendix |
 |---|---|---|
-| 2.1 | Comparison of Existing AI Governance Platforms | 17 |
-| 2.2 | Summary of EU AI Act Risk Categories | 11 |
-| 3.1 | Technology Stack Summary | 26 |
-| 3.2 | Compliance Framework Coverage Matrix | 31 |
-| 3.3 | EU AI Act Control Categories Implemented | 32 |
-| 3.4 | ISO/IEC 42001 Clause and Annex Mapping | 33 |
-| 3.5 | NIST AI RMF Function and Subcategory Coverage | 35 |
-| 3.6 | Risk Scoring Matrix | 36 |
-| 3.7 | User Roles and Permission Matrix | 30 |
-| 4.1 | React Component Library Structure | 47 |
-| 4.2 | Backend Route Module Catalogue | 49 |
-| 4.3 | Database Migration Sequence | 51 |
-| 5.1 | Functional Test Case Results Summary | 60 |
-| 5.2 | API Response Time Benchmarks | 62 |
-| 5.3 | PDF Report Generation Performance | 63 |
-| 5.4 | LLM Evaluation Metric Results | 64 |
-| 5.5 | Platform Feature Comparison Matrix | 68 |
+| Table 1 | Summary of EU AI Act Risk Categories | Chapter 2 |
+| Table 2 | Comparative Analysis of Existing AI Governance Platforms | Chapter 2 |
+| Table 3 | React Component Library Structure | Chapter 4 |
+| Table 4 | Sequelize Database Migration Manifest | Chapter 4 |
+| Table 5 | Aegis.AI REST API Endpoint Catalogue Summary | Chapter 4 |
+| Table 6 | Functional Test Suite Execution Summary (Sprints 1–12) | Chapter 5 |
+| Table 7 | Performance Benchmarking Results Under 50-User Simulated Load | Chapter 5 |
+| Table 8 | DeepEval LLM Evaluation Pipeline Validation Results | Chapter 5 |
+| Table 9 | Multi-Tenant Security Isolation Test Results | Chapter 5 |
+| Table 10 | Platform Feature Comparison Matrix | Chapter 5 |
+| Table 11 | Sprint Backlog Summary (Sprints 1–12) | Appendix A |
+| Table 12 | User Story Catalogue Summary (58 User Stories) | Appendix B |
+| Table 13 | System Test Case Summary (258 Test Cases) | Appendix C |
+| Table 14 | API Endpoint Catalogue (60 Route Modules) | Appendix D |
+| Table 15 | Database Schema Overview (Multi-Tenant Architecture) | Appendix E |
 
----
-
-<!-- LIST OF FIGURES [NEW PAGE] Page: xiii -->
 
 # LIST OF FIGURES
 
@@ -441,7 +436,7 @@ Article 72 establishes the post-market monitoring obligation, requiring provider
 
 The penalties for non-compliance are substantial. Article 99 of the AI Act provides for administrative fines of up to EUR 35 million or 7% of total worldwide annual turnover for violations related to prohibited AI practices, EUR 15 million or 3% for violations of other provisions of the Regulation, and EUR 7.5 million or 1.5% for the supply of incorrect information to notified bodies or national competent authorities.
 
-*Table 2.2*
+*Table 1*
 
 *Summary of EU AI Act Risk Categories*
 
@@ -535,7 +530,7 @@ The commercial market for AI governance platforms has expanded rapidly since 202
 
 Open-source alternatives in the AI governance space remain nascent and fragmented. MLflow (Zaharia et al., 2018) and Weights & Biases (Biewald, 2020) provide excellent model registry and experiment tracking capabilities but lack any compliance management, risk assessment, or audit reporting functionality. No existing open-source tool provides integrated, multi-framework AI compliance management at the depth required by the EU AI Act or ISO/IEC 42001.
 
-*Table 2.1*
+*Table 2*
 
 *Comparison of Existing AI Governance Platforms*
 
@@ -713,7 +708,7 @@ flowchart TB
 
 Aegis.AI's runtime architecture comprises six principal service tiers. Table 3.1 provides a comprehensive summary of the technology stack.
 
-*Table 3.1*
+*Table 3*
 
 *Technology Stack Summary*
 
@@ -877,7 +872,7 @@ Aegis.AI implements a stateless JWT-based authentication system (OWASP Foundatio
 
 *End User / Employee* holds limited read access to public-facing governance information and the ability to submit incident reports or complete assigned governance questionnaires.
 
-*Table 3.7*
+*Table 4*
 
 *User Roles and Permission Matrix*
 
@@ -933,7 +928,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 **EU AI Act Coverage.** Aegis.AI implements tracking across 13 EU AI Act control categories derived from the Act's substantive obligations, encompassing approximately 60 individual controls.
 
-*Table 3.3*
+*Table 5*
 
 *EU AI Act Control Categories Implemented in Aegis.AI*
 
@@ -957,7 +952,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 **ISO/IEC 42001 Coverage.** The platform implements the seven operational clauses (Clauses 4-10) with associated Annex A and Annex B control management.
 
-*Table 3.4*
+*Table 6*
 
 *ISO/IEC 42001 Clause and Annex Mapping*
 
@@ -975,7 +970,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 **NIST AI RMF Coverage.** Aegis.AI implements tracking across all four NIST AI RMF functions with coverage of approximately 70 subcategories.
 
-*Table 3.5*
+*Table 7*
 
 *NIST AI RMF Function and Subcategory Coverage*
 
@@ -1033,7 +1028,7 @@ The Risk Management Module provides a structured registry and assessment system 
 
 Where both Likelihood and Severity are assessed on an ordinal scale from 1 (lowest) to 5 (highest), yielding a theoretical range of Risk Scores from 4 (minimum, L=1, S=1) to 20 (maximum, L=5, S=5). The asymmetric weighting, Severity carrying three times the weight of Likelihood, reflects the governance principle that the potential magnitude of harm is a more significant determinant of risk priority than the probability of harm, particularly in AI governance contexts where the consequences of failures in high-risk AI systems can be severe and irreversible. This formula was validated by the Product Owner (Supervisor) during Sprint 5 review as matching EU AI Act guidance for risk prioritization.
 
-*Table 3.6*
+*Table 8*
 
 *Risk Scoring Matrix (Formula: L x 1 + S x 3)*
 
@@ -1503,7 +1498,7 @@ The frontend Single Page Application was implemented using React 18.3.1 with Con
 
 **State Management Architecture.** Application state is managed through a hybrid approach: Redux Toolkit stores global application state (user authentication, active tenant context, UI preferences, and notification queue), while TanStack React Query manages all server state (API data, caching, background refetching, and optimistic updates). `redux-persist` with localStorage serialization enables UI preferences and authentication tokens to survive browser refreshes.
 
-*Table 4.1*
+*Table 9*
 
 *React Component Library Structure*
 
@@ -1545,7 +1540,7 @@ sequenceDiagram
 
 The Express.js v4 backend is organized as a modular route architecture with 60 independent route modules. All incoming requests pass through a sequential middleware pipeline: CORS middleware -> Request logger (Morgan) -> Body parser -> Rate limiter (100 requests per 15 minutes per IP) -> JWT authenticator -> Tenant router (SET search_path) -> RBAC middleware -> Route handler -> Global error handler. This pipeline ensures that authentication, tenant isolation, and authorization checks are enforced consistently across all endpoints before any business logic executes.
 
-*Table 4.2*
+*Table 10*
 
 *Backend Route Module Catalogue (Selected)*
 
@@ -1630,7 +1625,7 @@ classDiagram
 
 The database layer is implemented using Sequelize ORM v6 with TypeScript model definitions. Models define column types, validation constraints, and associations (hasMany, belongsTo, hasOne, belongsToMany) that Sequelize uses to generate JOIN queries. All timestamp fields use PostgreSQL's TIMESTAMPTZ type for timezone-aware storage. JSONB columns are used extensively for flexible schema elements, notably risk history arrays, compliance evidence objects, and audit event payloads, with PostgreSQL GIN indexes enabling query performance on JSONB fields.
 
-*Table 4.3*
+*Table 11*
 
 *Database Migration Sequence (Selected)*
 
@@ -1925,7 +1920,7 @@ classDiagram
     LLMApiKey ..> LLMArenaComparison : configures
 ```
 
-*Table 5.1*
+*Table 12*
 
 *Functional Test Case Results Summary*
 
@@ -1982,7 +1977,7 @@ sequenceDiagram
 
 **API Response Time Benchmarks.** API response time benchmarks were conducted using Apache JMeter with a gradual ramp-up from 1 to 50 concurrent virtual users over a 120-second period, maintaining steady-state load for 300 seconds per test scenario.
 
-*Table 5.2*
+*Table 13*
 
 *API Response Time Benchmarks (50 Concurrent Users)*
 
@@ -2002,9 +1997,9 @@ sequenceDiagram
 
 The benchmark results demonstrate that Aegis.AI's API tier comfortably satisfies the target of sub-50ms mean response times for standard read operations. The 0.00% error rate across all endpoint categories under 50-concurrent-user load confirms that the connection pooling configuration (pool.max: 20 connections per service instance) is appropriately sized for the tested workload.
 
-**PDF Report Generation Performance.** Table 5.3 presents Playwright-based PDF report generation performance across report types.
+**PDF Report Generation Performance.** Table 8 presents Playwright-based PDF report generation performance across report types.
 
-*Table 5.3*
+*Table 14*
 
 *PDF Report Generation Performance*
 
@@ -2079,7 +2074,7 @@ classDiagram
 
 LLM evaluation benchmark results were generated using the EvalServer against a 50-item curated test dataset. Three models were evaluated: GPT-4o (OpenAI), Claude 3.5 Sonnet (Anthropic), and GPT-3.5-turbo (OpenAI, used as baseline).
 
-*Table 5.4*
+*Table 15*
 
 *LLM Evaluation Metric Results (50-Item Test Dataset)*
 
@@ -2140,7 +2135,7 @@ The complete absence of successful cross-tenant data access across 80 security t
 
 ## 5.7 Comparative Analysis
 
-*Table 5.5*
+*Table 16*
 
 *Platform Feature Comparison Matrix*
 
@@ -2366,7 +2361,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## Sprint Backlog Summary (Sprints 1-12)
 
-*Table A.1*
+*Table 17*
 
 *Sprint Backlog Summary (Sprints 1-12)*
 
@@ -2394,7 +2389,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## User Story Catalogue
 
-*Table B.1*
+*Table 18*
 
 *User Story Catalogue, Aegis.AI v1.0 *
 
@@ -2453,7 +2448,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## System Test Case Summary
 
-*Table C.1*
+*Table 19*
 
 *Sprint Test Case Summary (Representative Sample)*
 
@@ -2504,7 +2499,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## API Endpoint Catalogue
 
-*Table D.1*
+*Table 20*
 
 *Aegis.AI REST API Endpoint Catalogue (Selected)*
 
@@ -2561,7 +2556,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## Database Schema Overview
 
-*Table E.1*
+*Table 21*
 
 *Core Database Tables, Aegis.AI v1.0 Schema (Per Tenant)*
 
