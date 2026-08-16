@@ -711,7 +711,7 @@ flowchart TB
     API -->|SMTP/API| Email
 ```
 
-Aegis.AI's runtime architecture comprises six principal service tiers. Table 3.1 provides a comprehensive summary of the technology stack.
+Aegis.AI's runtime architecture comprises six principal service tiers. Table 3 provides a comprehensive summary of the technology stack.
 
 *Table 3*
 
@@ -1045,7 +1045,7 @@ Where both Likelihood and Severity are assessed on an ordinal scale from 1 (lowe
 | **4 Major** | 13 (High) | 14 (High) | 15 (High) | 16 (High) | 17 (Very High) |
 | **5 Critical** | 16 (High) | 17 (Very High) | 18 (Very High) | 19 (Very High) | 20 (Very High) |
 
-*Note.* Risk levels: Very Low = 4-5; Low = 6-8; Medium = 9-12; High = 13-16; Very High = 17-20. Based on Sprint 5 Decision Table (Table 32, , p. 73). Formula confirmed by Product Owner during Sprint 5 Review.
+*Note.* Risk levels: Very Low = 4-5; Low = 6-8; Medium = 9-12; High = 13-16; Very High = 17-20. Formulated based on the quantitative risk scoring model presented in Table 8.
 
 Every modification to a risk record, including changes to likelihood, severity, status, or treatment plan, is captured as an immutable snapshot in a JSONB history array appended to the risk record. This change history enables governance officers and auditors to reconstruct the evolution of any risk assessment over time, satisfying the EU AI Act's requirement for documented risk management records. Risk score time series data is surfaced through Recharts line and bar charts, enabling governance officers to track risk score trajectories across their project and model portfolios.
 
@@ -1855,13 +1855,13 @@ The evaluation of Aegis.AI was conducted through a multi-dimensional assessment 
 
 **Functional Testing.** Functional testing was implemented using a three-tier testing pyramid: unit tests using Jest v29 for individual module logic, integration tests using Supertest for API endpoint behavior, and end-to-end tests using React Testing Library for frontend component behavior. Tests were organized into 12 Sprint Test Suites aligned with the development sprint structure, with each Sprint Test Suite covering the User Stories delivered within that sprint.
 
-**Performance Benchmarking.** Performance benchmarks were conducted using Apache JMeter with test scenarios calibrated to simulate concurrent governance activity representative of a 50-user organizational deployment. Benchmark metrics collected included mean response time, 95th percentile response time, and error rate under load.
+**Performance Benchmarking.** Performance benchmarks were conducted using Apache JMeter with test scenarios calibrated to simulate concurrent governance activity representative of a 50-user organizational deployment. Benchmark metrics collected included mean response time, 95th percentile response time, and error rate under load (presented in Table 13).
 
-**LLM Evaluation Metric Validation.** The DeepEval evaluation pipeline was validated against a curated dataset of 50 LLM interactions spanning three model types (GPT-4o, Claude 3.5 Sonnet, and GPT-3.5-turbo as baseline) across five governance-relevant task categories: regulatory question answering, risk description generation, policy document drafting, compliance control assessment, and incident summarization.
+**LLM Evaluation Metric Validation.** The DeepEval evaluation pipeline was validated against a curated dataset of 50 LLM interactions (results detailed in Table 15) spanning three model types (GPT-4o, Claude 3.5 Sonnet, and GPT-3.5-turbo as baseline) across five governance-relevant task categories: regulatory question answering, risk description generation, policy document drafting, compliance control assessment, and incident summarization.
 
 **Multi-Tenant Isolation Verification.** Security isolation testing employed a systematic cross-tenant access attempt protocol in which authenticated API clients for Tenant A attempted to access governance objects belonging to Tenant B via direct database record ID manipulation, schema injection attempts in API parameters, and JWT token modification attempts.
 
-**Total Test Coverage.** Across all testing dimensions, 258 test cases were executed, achieving a 100% pass rate. The platform achieved an overall system accuracy of 99% across all evaluated functional dimensions.
+**Total Test Coverage.** Across all testing dimensions, 258 test cases were executed (summarized in Table 12), achieving a 100% pass rate. The platform achieved an overall system accuracy of 99% across all evaluated functional dimensions.
 
 The evaluation strategy comprised three complementary empirical approaches (Zhu et al., 1997): (1) functional black-box acceptance testing across all 58 user stories (spanning Sprints 1 through 12) using live browser-based User Acceptance Testing (UAT); (2) API performance benchmarking under simulated concurrent organizational load; and (3) security isolation testing to verify strict schema-per-tenant data segregation. Across all twelve sprint iterations, all 58 user stories totaling 329 committed story points achieved Done status (100% delivery rate, as documented in Appendices A and B). All 258 defined system test cases across the twelve sprint test suites passed without regression. Optional third-party cloud credential integrations (such as external enterprise SMTP servers, hosted MLflow tracking servers, and paid LLM API key provisioning) are documented as operational deployment options in Section 6.4.
 
@@ -2002,7 +2002,7 @@ sequenceDiagram
 
 The benchmark results demonstrate that Aegis.AI's API tier comfortably satisfies the target of sub-50ms mean response times for standard read operations. The 0.00% error rate across all endpoint categories under 50-concurrent-user load confirms that the connection pooling configuration (pool.max: 20 connections per service instance) is appropriately sized for the tested workload.
 
-**PDF Report Generation Performance.** Table 8 presents Playwright-based PDF report generation performance across report types.
+**PDF Report Generation Performance.** Table 14 presents Playwright-based PDF report generation performance across report types.
 
 *Table 14*
 
@@ -2163,7 +2163,7 @@ The complete absence of successful cross-tenant data access across 80 security t
 
 *Note.* Feature assessments based on publicly available documentation as of 2025. N/A = not applicable or not publicly documented.
 
-The comparison demonstrates that Aegis.AI provides a feature set that either matches or exceeds commercial platforms on the majority of evaluated dimensions, while uniquely offering self-hosted deployment, complete multi-framework coverage, integrated LLM evaluation, and an open licensing model. The most significant differentiation is the combination of self-hosting capability and LLM evaluation integration, a pairing not available in any existing commercial or open-source platform identified in the literature review.
+The comparative analysis presented in Table 16 demonstrates that Aegis.AI provides a feature set that either matches or exceeds commercial platforms on the majority of evaluated dimensions, while uniquely offering self-hosted deployment, complete multi-framework coverage, integrated LLM evaluation, and an open licensing model. The most significant differentiation is the combination of self-hosting capability and LLM evaluation integration, a pairing not available in any existing commercial or open-source platform identified in the literature review.
 
 
 ---
