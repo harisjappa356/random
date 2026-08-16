@@ -284,59 +284,58 @@ University of Management and Technology, Lahore
 
 | Table | Title | Chapter |
 |---|---|---|
-| Table 1 | Summary of EU AI Act Risk Categories | Chapter 2 |
-| Table 2 | Comparison of Existing AI Governance Platforms | Chapter 2 |
-| Table 3 | Technology Stack Summary | Chapter 3 |
-| Table 4 | User Roles and Permission Matrix | Chapter 3 |
-| Table 5 | EU AI Act Control Categories Implemented in Aegis.AI | Chapter 3 |
-| Table 6 | ISO/IEC 42001 Clause and Annex Mapping | Chapter 3 |
-| Table 7 | NIST AI RMF Function and Subcategory Coverage | Chapter 3 |
-| Table 8 | Risk Scoring Matrix (Formula: L x 1 + S x 3) | Chapter 3 |
-| Table 9 | React Component Library Structure | Chapter 4 |
-| Table 10 | Backend Route Module Catalogue (Selected) | Chapter 4 |
-| Table 11 | Database Migration Sequence (Selected) | Chapter 4 |
-| Table 12 | Functional Test Case Results Summary | Chapter 5 |
-| Table 13 | API Response Time Benchmarks (50 Concurrent Users) | Chapter 5 |
-| Table 14 | PDF Report Generation Performance | Chapter 5 |
-| Table 15 | LLM Evaluation Metric Results (50-Item Test Dataset) | Chapter 5 |
-| Table 16 | Platform Feature Comparison Matrix | Chapter 5 |
-| Table 17 | Sprint Backlog Summary (Sprints 1-12) | Appendices |
-| Table 18 | User Story Catalogue, Aegis.AI v1.0 | Appendices |
-| Table 19 | Sprint Test Case Summary (Representative Sample) | Appendices |
-| Table 20 | Aegis.AI REST API Endpoint Catalogue (Selected) | Appendices |
-| Table 21 | Core Database Tables, Aegis.AI v1.0 Schema (Per Tenant) | Appendices |
+| Table 2.1 | Summary of EU AI Act Risk Categories | Chapter 2 |
+| Table 2.2 | Comparison of Existing AI Governance Platforms | Chapter 2 |
+| Table 3.1 | Technology Stack Summary | Chapter 3 |
+| Table 3.2 | User Roles and Permission Matrix | Chapter 3 |
+| Table 3.3 | EU AI Act Control Categories Implemented in Aegis.AI | Chapter 3 |
+| Table 3.4 | ISO/IEC 42001 Clause and Annex Mapping | Chapter 3 |
+| Table 3.5 | NIST AI RMF Function and Subcategory Coverage | Chapter 3 |
+| Table 3.6 | Risk Scoring Matrix (Formula: L x 1 + S x 3) | Chapter 3 |
+| Table 4.1 | React Component Library Structure | Chapter 4 |
+| Table 4.2 | Backend Route Module Catalogue (Selected) | Chapter 4 |
+| Table 4.3 | Database Migration Sequence (Selected) | Chapter 4 |
+| Table 5.1 | Functional Test Case Results Summary | Chapter 5 |
+| Table 5.2 | API Response Time Benchmarks (50 Concurrent Users) | Chapter 5 |
+| Table 5.3 | PDF Report Generation Performance | Chapter 5 |
+| Table 5.4 | LLM Evaluation Metric Results (50-Item Test Dataset) | Chapter 5 |
+| Table 5.5 | Platform Feature Comparison Matrix | Chapter 5 |
+| Table A.1 | Sprint Backlog Summary (Sprints 1-12) | Appendix A |
+| Table B.1 | User Story Catalogue, Aegis.AI v1.0 | Appendix B |
+| Table C.1 | Sprint Test Case Summary (Representative Sample) | Appendix C |
+| Table D.1 | Aegis.AI REST API Endpoint Catalogue (Selected) | Appendix D |
+| Table E.1 | Core Database Tables, Aegis.AI v1.0 Schema (Per Tenant) | Appendix E |
 
 # LIST OF FIGURES
 
 | Figure | Title | Chapter |
 |---|---|---|
-| Figure 1 | Aegis.AI System Context and External Integration Boundary Architecture | Chapter 2 |
-| Figure 2 | System-Level Data Flow Diagram (Level 0) Across Core Compliance Processes | Chapter 2 |
-| Figure 3 | System Context and Deployment Architecture (C4 Level 1) | Chapter 3 |
-| Figure 4 | Backend Component Architecture (C4 Level 3) | Chapter 3 |
-| Figure 5 | Domain Object Model and Entity Relationships (C4 Level 4) | Chapter 3 |
-| Figure 6 | Clean Architecture Layered Dependency Structure | Chapter 3 |
-| Figure 7 | Entity-Relationship Diagram (ERD) of the Aegis.AI Database Schema | Chapter 3 |
-| Figure 8 | End-to-End Multi-Step Approval Workflow Execution Sequence | Chapter 3 |
-| Figure 9 | Risk Creation and Recalculation Sequence Diagram | Chapter 3 |
-| Figure 10 | Policy and Vendor Management Domain Class Diagram | Chapter 3 |
-| Figure 11 | Policy Governance Lifecycle Sequence Diagram | Chapter 3 |
-| Figure 12 | AI Model Inventory and NIST AI RMF Domain Class Diagram | Chapter 3 |
-| Figure 13 | AI Model Registration and NIST RMF Status Synchronization Sequence Diagram | Chapter 3 |
-| Figure 14 | System-Wide Data Flow Diagram (Level 0) | Chapter 3 |
-| Figure 15 | Comprehensive Data Flow Diagram (Level 1) | Chapter 3 |
-| Figure 16 | Authentication and Access Control Class Hierarchy | Chapter 4 |
-| Figure 17 | User Authentication and JWT Generation Sequence Diagram | Chapter 4 |
-| Figure 18 | Multi-Tenant Database Routing and Approval Engine Class Diagram | Chapter 4 |
-| Figure 19 | Multi-Tenant Use Case Approval Submission Sequence Diagram | Chapter 4 |
-| Figure 20 | EU AI Act Framework Engine Class Diagram | Chapter 4 |
-| Figure 21 | AI Auto-Driver Regulatory Control Auto-Fill Sequence Diagram | Chapter 4 |
-| Figure 22 | Risk Management Architecture Class Diagram | Chapter 4 |
-| Figure 23 | LLM Evaluation and AI Advisor Domain Class Diagram | Chapter 4 |
-| Figure 24 | LLM API Key Encryption and Management Sequence Diagram | Chapter 4 |
-| Figure 25 | Reporting Engine, Global Search, and AI Trust Center Class Diagram | Chapter 4 |
-| Figure 26 | Multi-Framework Compliance Report Generation Sequence Diagram | Chapter 4 |
-
+| Figure 2.1 | Aegis.AI System Context and External Integration Boundary Architecture | Chapter 2 |
+| Figure 2.2 | System-Level Data Flow Diagram (Level 0) | Chapter 2 |
+| Figure 3.1 | System Context and Deployment Architecture (C4 Level 1) | Chapter 3 |
+| Figure 3.2 | Backend Component Architecture (C4 Level 3) | Chapter 3 |
+| Figure 3.3 | Domain Object Model and Entity Relationships (C4 Level 4) | Chapter 3 |
+| Figure 3.4 | Clean Architecture Layered Dependency Structure | Chapter 3 |
+| Figure 3.5 | Entity-Relationship Diagram (ERD) of the Aegis.AI Relational Database Schema | Chapter 3 |
+| Figure 3.6 | End-to-End Multi-Step Approval Workflow Execution Sequence, Showing Submission, Dynamic Approver Resolution, State Validation, Automated Audit Logging, and Real-Time SSE Notification Dispatch. | Chapter 3 |
+| Figure 3.7 | Risk Creation and Recalculation Sequence Diagram | Chapter 3 |
+| Figure 3.8 | Policy and Vendor Management Domain Class Diagram | Chapter 3 |
+| Figure 3.9 | Policy Governance Lifecycle Sequence Diagram | Chapter 3 |
+| Figure 3.10 | AI Model Inventory and NIST AI RMF Domain Class Diagram | Chapter 3 |
+| Figure 3.11 | AI Model Registration and NIST RMF Status Synchronization Sequence Diagram | Chapter 3 |
+| Figure 3.12 | System-Wide Data Flow Diagram (Level 0) | Chapter 3 |
+| Figure 3.13 | Comprehensive Data Flow Diagram (Level 1) | Chapter 3 |
+| Figure 4.1 | Authentication and Access Control Class Hierarchy | Chapter 4 |
+| Figure 4.2 | User Authentication and JWT Generation Sequence Diagram | Chapter 4 |
+| Figure 4.3 | Multi-Tenant Database Routing and Approval Engine Class Diagram | Chapter 4 |
+| Figure 4.4 | Multi-Tenant Use Case Approval Submission Sequence Diagram | Chapter 4 |
+| Figure 4.5 | EU AI Act Framework Engine Class Diagram | Chapter 4 |
+| Figure 4.6 | AI Auto-Driver Regulatory Control Auto-Fill Sequence Diagram | Chapter 4 |
+| Figure 4.7 | Risk Management Architecture Class Diagram | Chapter 4 |
+| Figure 5.1 | LLM Evaluation and AI Advisor Domain Class Diagram | Chapter 5 |
+| Figure 5.2 | LLM API Key Encryption and Management Sequence Diagram | Chapter 5 |
+| Figure 5.3 | Reporting Engine, Global Search, and AI Trust Center Class Diagram | Chapter 5 |
+| Figure 5.4 | Multi-Framework Compliance Report Generation Sequence Diagram | Chapter 5 |
 
 # Chapter 1
 
@@ -441,7 +440,7 @@ Article 72 establishes the post-market monitoring obligation, requiring provider
 
 The penalties for non-compliance are substantial. Article 99 of the AI Act provides for administrative fines of up to EUR 35 million or 7% of total worldwide annual turnover for violations related to prohibited AI practices, EUR 15 million or 3% for violations of other provisions of the Regulation, and EUR 7.5 million or 1.5% for the supply of incorrect information to notified bodies or national competent authorities.
 
-*Table 1*
+*Table 2.1*
 
 *Summary of EU AI Act Risk Categories*
 
@@ -488,7 +487,7 @@ The NIST AI RMF is organized around four core functions:
 
 ## 2.6 Existing AI Governance Platforms: A Critical Review
 
-*Figure 1: Aegis.AI System Context and External Integration Boundary Architecture, Depicting Interactions Between Four Core RBAC User Roles (Admin, Editor, Reviewer, Auditor) and Six External Dependency Categories (PostgreSQL Multi-Tenant Storage, Redis Job Queues and Pub/Sub, LLM Providers, GitHub Repository Scanner, MLflow Model Metadata Sync, and SMTP Notification Services).*
+*Figure 2.1: Aegis.AI System Context and External Integration Boundary Architecture, Depicting Interactions Between Four Core RBAC User Roles (Admin, Editor, Reviewer, Auditor) and Six External Dependency Categories (PostgreSQL Multi-Tenant Storage, Redis Job Queues and Pub/Sub, LLM Providers, GitHub Repository Scanner, MLflow Model Metadata Sync, and SMTP Notification Services).*
 
 ```mermaid
 flowchart TD
@@ -535,7 +534,7 @@ The commercial market for AI governance platforms has expanded rapidly since 202
 
 Open-source alternatives in the AI governance space remain nascent and fragmented. MLflow (Zaharia et al., 2018) and Weights & Biases (Biewald, 2020) provide excellent model registry and experiment tracking capabilities but lack any compliance management, risk assessment, or audit reporting functionality. No existing open-source tool provides integrated, multi-framework AI compliance management at the depth required by the EU AI Act or ISO/IEC 42001.
 
-*Table 2*
+*Table 2.2*
 
 *Comparison of Existing AI Governance Platforms*
 
@@ -584,7 +583,7 @@ From a governance platform perspective, LLM evaluation must be treated not merel
 
 ## 2.10 Research Gap
 
-*Figure 2: System-Level Data Flow Diagram (Level 0), Illustrating Primary Governance Data Exchanges Across Core Compliance Processes Connecting External Stakeholders, Automated Pipelines, and Persistent Repositories.*
+*Figure 2.2: System-Level Data Flow Diagram (Level 0), Illustrating Primary Governance Data Exchanges Across Core Compliance Processes Connecting External Stakeholders, Automated Pipelines, and Persistent Repositories.*
 
 ```mermaid
 flowchart LR
@@ -649,7 +648,7 @@ Aegis.AI addresses this gap by designing, implementing, and empirically evaluati
 
 ## 3.1 Architectural Philosophy
 
-> **Note on Figures:** The Data Flow Diagrams (Figure 14: Level 0; Figure 15: Level 1) are presented in Section 3.13, providing a complete system-level data flow perspective complementing the C4 architecture diagrams in Sections 3.2 and 3.3.
+> **Note on Figures:** The Data Flow Diagrams (Figure 3.12: Level 0; Figure 3.13: Level 1) are presented in Section 3.13, providing a complete system-level data flow perspective complementing the C4 architecture diagrams in Sections 3.2 and 3.3.
 
 The design of Aegis.AI is guided by four foundational architectural principles derived from established software engineering and quality attribute frameworks (Bass et al., 2013), the requirements analysis presented in Chapter 1, and the critical review of existing platforms in Chapter 2.
 
@@ -663,7 +662,7 @@ The design of Aegis.AI is guided by four foundational architectural principles d
 
 ## 3.2 High-Level System Architecture
 
-*Figure 3: System Context and Deployment Architecture (C4 Level 1), Illustrating the Three-Tier Topology Across React SPA Frontend, Express REST API Backend, Python FastAPI EvalServer, BullMQ Background Workers, and Containerized Persistence Infrastructure.*
+*Figure 3.1: System Context and Deployment Architecture (C4 Level 1), Illustrating the Three-Tier Topology Across React SPA Frontend, Express REST API Backend, Python FastAPI EvalServer, BullMQ Background Workers, and Containerized Persistence Infrastructure.*
 
 ```mermaid
 flowchart TB
@@ -711,9 +710,9 @@ flowchart TB
     API -->|SMTP/API| Email
 ```
 
-Aegis.AI's runtime architecture comprises six principal service tiers. Table 3 provides a comprehensive summary of the technology stack.
+Aegis.AI's runtime architecture comprises six principal service tiers. Table 3.1 provides a comprehensive summary of the technology stack.
 
-*Table 3*
+*Table 3.1*
 
 *Technology Stack Summary*
 
@@ -746,7 +745,7 @@ The system is organized as: a React 18 SPA client communicating via HTTPS/REST/S
 
 ## 3.3 Multi-Tenant Database Architecture
 
-*Figure 4: Backend Component Architecture (C4 Level 3), Detailing the Express.js API Pipeline, JWT Authentication, Dynamic Tenant Schema Isolation Middleware, RBAC Route Guards, Domain Controllers, and Real-Time Event Publishers.*
+*Figure 3.2: Backend Component Architecture (C4 Level 3), Detailing the Express.js API Pipeline, JWT Authentication, Dynamic Tenant Schema Isolation Middleware, RBAC Route Guards, Domain Controllers, and Real-Time Event Publishers.*
 
 ```mermaid
 flowchart LR
@@ -792,7 +791,7 @@ The architecture maintains a shared `public` schema containing the global tenant
 
 ## 3.4 Authentication and Role-Based Access Control
 
-*Figure 5: Domain Object Model and Entity Relationships (C4 Level 4), Illustrating Core Class Hierarchies, Aggregate Roots (Organization and Project), Automated Risk Scoring Entities, and Multi-Step Approval Workflow State Machines.*
+*Figure 3.3: Domain Object Model and Entity Relationships (C4 Level 4), Illustrating Core Class Hierarchies, Aggregate Roots (Organization and Project), Automated Risk Scoring Entities, and Multi-Step Approval Workflow State Machines.*
 
 ```mermaid
 classDiagram
@@ -877,7 +876,7 @@ Aegis.AI implements a stateless JWT-based authentication system (OWASP Foundatio
 
 *End User / Employee* holds limited read access to public-facing governance information and the ability to submit incident reports or complete assigned governance questionnaires.
 
-*Table 4*
+*Table 3.2*
 
 *User Roles and Permission Matrix*
 
@@ -897,7 +896,7 @@ Aegis.AI implements a stateless JWT-based authentication system (OWASP Foundatio
 
 ## 3.5 Compliance Framework Engine
 
-*Figure 6: Clean Architecture Layered Dependency Structure, Highlighting Strict Separation Between Inward-Facing Domain Business Rules, Application Services, Data Repositories, and Outward-Facing Infrastructure Adapters.*
+*Figure 3.4: Clean Architecture Layered Dependency Structure, Highlighting Strict Separation Between Inward-Facing Domain Business Rules, Application Services, Data Repositories, and Outward-Facing Infrastructure Adapters.*
 
 ```mermaid
 flowchart TD
@@ -933,7 +932,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 **EU AI Act Coverage.** Aegis.AI implements tracking across 13 EU AI Act control categories derived from the Act's substantive obligations, encompassing approximately 60 individual controls.
 
-*Table 5*
+*Table 3.3*
 
 *EU AI Act Control Categories Implemented in Aegis.AI*
 
@@ -957,7 +956,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 **ISO/IEC 42001 Coverage.** The platform implements the seven operational clauses (Clauses 4-10) with associated Annex A and Annex B control management.
 
-*Table 6*
+*Table 3.4*
 
 *ISO/IEC 42001 Clause and Annex Mapping*
 
@@ -975,7 +974,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 **NIST AI RMF Coverage.** Aegis.AI implements tracking across all four NIST AI RMF functions with coverage of approximately 70 subcategories.
 
-*Table 7*
+*Table 3.5*
 
 *NIST AI RMF Function and Subcategory Coverage*
 
@@ -990,7 +989,7 @@ The Compliance Framework Engine is the central governance module of Aegis.AI, pr
 
 ## 3.6 Risk Management Module Design
 
-*Figure 7: Entity-Relationship Diagram (ERD) of the Aegis.AI Relational Database Schema, Depicting Shared Global Public Tables and Isolated Schema-Per-Tenant Relational Entities Covering Compliance, Risks, Models, and Audits.*
+*Figure 3.5: Entity-Relationship Diagram (ERD) of the Aegis.AI Relational Database Schema, Depicting Shared Global Public Tables and Isolated Schema-Per-Tenant Relational Entities Covering Compliance, Risks, Models, and Audits.*
 
 ```mermaid
 erDiagram
@@ -1033,7 +1032,7 @@ The Risk Management Module provides a structured registry and assessment system 
 
 Where both Likelihood and Severity are assessed on an ordinal scale from 1 (lowest) to 5 (highest), yielding a theoretical range of Risk Scores from 4 (minimum, L=1, S=1) to 20 (maximum, L=5, S=5). The asymmetric weighting, Severity carrying three times the weight of Likelihood, reflects the governance principle that the potential magnitude of harm is a more significant determinant of risk priority than the probability of harm, particularly in AI governance contexts where the consequences of failures in high-risk AI systems can be severe and irreversible. This formula was validated by the Product Owner (Supervisor) during Sprint 5 review as matching EU AI Act guidance for risk prioritization.
 
-*Table 8*
+*Table 3.6*
 
 *Risk Scoring Matrix (Formula: L x 1 + S x 3)*
 
@@ -1045,13 +1044,13 @@ Where both Likelihood and Severity are assessed on an ordinal scale from 1 (lowe
 | **4 Major** | 13 (High) | 14 (High) | 15 (High) | 16 (High) | 17 (Very High) |
 | **5 Critical** | 16 (High) | 17 (Very High) | 18 (Very High) | 19 (Very High) | 20 (Very High) |
 
-*Note.* Risk levels: Very Low = 4-5; Low = 6-8; Medium = 9-12; High = 13-16; Very High = 17-20. Formulated based on the quantitative risk scoring model presented in Table 8.
+*Note.* Risk levels: Very Low = 4-5; Low = 6-8; Medium = 9-12; High = 13-16; Very High = 17-20. Formulated based on the quantitative risk scoring model presented in Table 3.6.
 
 Every modification to a risk record, including changes to likelihood, severity, status, or treatment plan, is captured as an immutable snapshot in a JSONB history array appended to the risk record. This change history enables governance officers and auditors to reconstruct the evolution of any risk assessment over time, satisfying the EU AI Act's requirement for documented risk management records. Risk score time series data is surfaced through Recharts line and bar charts, enabling governance officers to track risk score trajectories across their project and model portfolios.
 
 ## 3.7 Policy Management Subsystem
 
-*Figure 8: End-to-End Multi-Step Approval Workflow Execution Sequence, Showing Submission, Dynamic Approver Resolution, State Validation, Automated Audit Logging, and Real-Time SSE Notification Dispatch.*
+*Figure 3.6: End-to-End Multi-Step Approval Workflow Execution Sequence, Showing Submission, Dynamic Approver Resolution, State Validation, Automated Audit Logging, and Real-Time SSE Notification Dispatch.*
 
 ```mermaid
 sequenceDiagram
@@ -1100,7 +1099,7 @@ Policies can be linked to specific compliance framework controls (creating a tra
 
 ## 3.8 LLM Evaluation Architecture
 
-*Figure 9: Risk Creation and Recalculation Sequence Diagram, Illustrating Automated Execution of the Formula Risk Score = (Likelihood x 1) + (Severity x 3), Historical Trend Snapshot Logging, and WebSocket Alert Emission.*
+*Figure 3.7: Risk Creation and Recalculation Sequence Diagram, Illustrating Automated Execution of the Formula Risk Score = (Likelihood x 1) + (Severity x 3), Historical Trend Snapshot Logging, and WebSocket Alert Emission.*
 
 ```mermaid
 sequenceDiagram
@@ -1152,7 +1151,7 @@ All metrics produce scores in the range [0, 1], with higher scores indicating be
 
 ## 3.9 Real-Time Event Streaming Architecture
 
-*Figure 10: Policy and Vendor Management Domain Class Diagram, Defining the 5-Stage Policy Lifecycle (Draft, Under Review, Approved, Published, Archived), Vendor Risk Tiering, and Cross-Linked Regulatory Control Mappings.*
+*Figure 3.8: Policy and Vendor Management Domain Class Diagram, Defining the 5-Stage Policy Lifecycle (Draft, Under Review, Approved, Published, Archived), Vendor Risk Tiering, and Cross-Linked Regulatory Control Mappings.*
 
 ```mermaid
 classDiagram
@@ -1216,7 +1215,7 @@ Aegis.AI's WatchTower module provides real-time streaming of governance events a
 
 ## 3.10 Reporting Engine Design
 
-*Figure 11: Policy Governance Lifecycle Sequence Diagram, Tracing Policy Creation, Formal Review Submission, Approver Sign-off, Versioned Publishing, and Tenant-Wide Audit Distribution.*
+*Figure 3.9: Policy Governance Lifecycle Sequence Diagram, Tracing Policy Creation, Formal Review Submission, Approver Sign-off, Versioned Publishing, and Tenant-Wide Audit Distribution.*
 
 ```mermaid
 sequenceDiagram
@@ -1254,7 +1253,7 @@ Report types available include: EU AI Act Compliance Report (covering all 13 con
 
 ## 3.11 AI Detection and AI-BOM Generator
 
-*Figure 12: AI Model Inventory and NIST AI RMF Domain Class Diagram, Modeling Model Version Lineage, Deployment Profiles, and Hierarchical Mapping Across the Four NIST Functions (GOVERN, MAP, MEASURE, MANAGE).*
+*Figure 3.10: AI Model Inventory and NIST AI RMF Domain Class Diagram, Modeling Model Version Lineage, Deployment Profiles, and Hierarchical Mapping Across the Four NIST Functions (GOVERN, MAP, MEASURE, MANAGE).*
 
 ```mermaid
 classDiagram
@@ -1309,7 +1308,7 @@ The AI Detection module integrates with GitHub repository APIs to scan organizat
 
 ## 3.12 Post-Market Monitoring Architecture
 
-*Figure 13: AI Model Registration and NIST RMF Status Synchronization Sequence Diagram, Illustrating Metadata Ingestion, Version Snapshotting, Automated Control Recalculation, and Real-Time Dashboard Updates.*
+*Figure 3.11: AI Model Registration and NIST RMF Status Synchronization Sequence Diagram, Illustrating Metadata Ingestion, Version Snapshotting, Automated Control Recalculation, and Real-Time Dashboard Updates.*
 
 ```mermaid
 sequenceDiagram
@@ -1348,7 +1347,7 @@ PMM reviews are triggered automatically by the BullMQ cron scheduler at the freq
 
 The data architecture of Aegis.AI is formalized through two levels of Data Flow Diagrams (DFD) defining system boundaries, data stores, external entities, and data transformation pipelines.
 
-*Figure 14: System-Wide Data Flow Diagram (Level 0), Mapping End-to-End Data Exchanges Between Multi-Role Users, External Enterprise Integrations, and the Core Aegis.AI Application Boundary.*
+*Figure 3.12: System-Wide Data Flow Diagram (Level 0), Mapping End-to-End Data Exchanges Between Multi-Role Users, External Enterprise Integrations, and the Core Aegis.AI Application Boundary.*
 
 ```mermaid
 flowchart LR
@@ -1384,7 +1383,7 @@ flowchart LR
 ```
 
 
-*Figure 15: Comprehensive Data Flow Diagram (Level 1), Decomposing System Operations Into Eight Discrete Data Processing Pipelines Covering Authentication, Compliance, Risk Scoring, LLM Evaluation, and Reporting.*
+*Figure 3.13: Comprehensive Data Flow Diagram (Level 1), Decomposing System Operations Into Eight Discrete Data Processing Pipelines Covering Authentication, Compliance, Risk Scoring, LLM Evaluation, and Reporting.*
 
 ```mermaid
 flowchart TB
@@ -1451,7 +1450,7 @@ The researcher employed a Git Flow-inspired branching model with a permanent `ma
 
 ## 4.2 Frontend Implementation
 
-*Figure 16: Authentication and Access Control Class Hierarchy, Modeling User Identities, Four-Tier RBAC Enforcements, Organization Subscription Tiers, and JWT Validation Interceptors.*
+*Figure 4.1: Authentication and Access Control Class Hierarchy, Modeling User Identities, Four-Tier RBAC Enforcements, Organization Subscription Tiers, and JWT Validation Interceptors.*
 
 ```mermaid
 classDiagram
@@ -1503,7 +1502,7 @@ The frontend Single Page Application was implemented using React 18.3.1 with Con
 
 **State Management Architecture.** Application state is managed through a hybrid approach: Redux Toolkit stores global application state (user authentication, active tenant context, UI preferences, and notification queue), while TanStack React Query manages all server state (API data, caching, background refetching, and optimistic updates). `redux-persist` with localStorage serialization enables UI preferences and authentication tokens to survive browser refreshes.
 
-*Table 9*
+*Table 4.1*
 
 *React Component Library Structure*
 
@@ -1518,7 +1517,7 @@ The frontend Single Page Application was implemented using React 18.3.1 with Con
 
 ## 4.3 Backend API Implementation
 
-*Figure 17: User Authentication and JWT Generation Sequence Diagram, Illustrating Bcrypt Password Hash Verification, Scoped Token Issuance, and Client-Side State Hydration.*
+*Figure 4.2: User Authentication and JWT Generation Sequence Diagram, Illustrating Bcrypt Password Hash Verification, Scoped Token Issuance, and Client-Side State Hydration.*
 
 ```mermaid
 sequenceDiagram
@@ -1545,7 +1544,7 @@ sequenceDiagram
 
 The Express.js v4 backend is organized as a modular route architecture with 60 independent route modules. All incoming requests pass through a sequential middleware pipeline: CORS middleware -> Request logger (Morgan) -> Body parser -> Rate limiter (100 requests per 15 minutes per IP) -> JWT authenticator -> Tenant router (SET search_path) -> RBAC middleware -> Route handler -> Global error handler. This pipeline ensures that authentication, tenant isolation, and authorization checks are enforced consistently across all endpoints before any business logic executes.
 
-*Table 10*
+*Table 4.2*
 
 *Backend Route Module Catalogue (Selected)*
 
@@ -1572,7 +1571,7 @@ All route handlers follow a consistent error handling pattern using a custom `Ap
 
 ## 4.4 Database Layer Implementation
 
-*Figure 18: Multi-Tenant Database Routing and Approval Engine Class Diagram, Defining TenantMiddleware Context Switching, Dynamic SQL Schema Isolation, and Approval Step Rule Evaluators.*
+*Figure 4.3: Multi-Tenant Database Routing and Approval Engine Class Diagram, Defining TenantMiddleware Context Switching, Dynamic SQL Schema Isolation, and Approval Step Rule Evaluators.*
 
 ```mermaid
 classDiagram
@@ -1630,7 +1629,7 @@ classDiagram
 
 The database layer is implemented using Sequelize ORM v6 with TypeScript model definitions. Models define column types, validation constraints, and associations (hasMany, belongsTo, hasOne, belongsToMany) that Sequelize uses to generate JOIN queries. All timestamp fields use PostgreSQL's TIMESTAMPTZ type for timezone-aware storage. JSONB columns are used extensively for flexible schema elements, notably risk history arrays, compliance evidence objects, and audit event payloads, with PostgreSQL GIN indexes enabling query performance on JSONB fields.
 
-*Table 11*
+*Table 4.3*
 
 *Database Migration Sequence (Selected)*
 
@@ -1651,7 +1650,7 @@ The database layer is implemented using Sequelize ORM v6 with TypeScript model d
 
 ## 4.5 Evaluation Server Implementation
 
-*Figure 19: Multi-Tenant Use Case Approval Submission Sequence Diagram, Tracing Cross-Schema Isolation Guards, Approval Chain Traversal, and Real-Time SSE Notification Broadcasting.*
+*Figure 4.4: Multi-Tenant Use Case Approval Submission Sequence Diagram, Tracing Cross-Schema Isolation Guards, Approval Chain Traversal, and Real-Time SSE Notification Broadcasting.*
 
 ```mermaid
 sequenceDiagram
@@ -1686,7 +1685,7 @@ The EvalServer supports three LLM providers: OpenAI (GPT-4, GPT-4o, GPT-3.5-turb
 
 ## 4.6 Background Job Processing
 
-*Figure 20: EU AI Act Framework Engine Class Diagram, Modeling 13 Regulatory Risk Categories, Granular Control Lifecycles, Assessment Questionnaires, and OpenAI Auto-Driver Integrations.*
+*Figure 4.5: EU AI Act Framework Engine Class Diagram, Modeling 13 Regulatory Risk Categories, Granular Control Lifecycles, Assessment Questionnaires, and OpenAI Auto-Driver Integrations.*
 
 ```mermaid
 classDiagram
@@ -1741,7 +1740,7 @@ All queues are configured with a three-attempt retry policy with exponential bac
 
 ## 4.7 Containerization and Deployment
 
-*Figure 21: AI Auto-Driver Regulatory Control Auto-Fill Sequence Diagram, Tracing Automated Context Extraction, LLM Prompt Construction, Implementation Generation, and Progress Percentage Recalculation.*
+*Figure 4.6: AI Auto-Driver Regulatory Control Auto-Fill Sequence Diagram, Tracing Automated Context Extraction, LLM Prompt Construction, Implementation Generation, and Progress Percentage Recalculation.*
 
 ```mermaid
 sequenceDiagram
@@ -1776,7 +1775,7 @@ For production-scale Kubernetes deployments, the backend Deployment is configure
 
 ## 4.8 External Service Integrations
 
-*Figure 22: Risk Management Architecture Class Diagram, Detailing Unified Quantitative Scoring Across Project, Vendor, and Model Risks, Snapshot Histories, and Recharts Trend Visualization Structures.*
+*Figure 4.7: Risk Management Architecture Class Diagram, Detailing Unified Quantitative Scoring Across Project, Vendor, and Model Risks, Snapshot Histories, and Recharts Trend Visualization Structures.*
 
 ```mermaid
 classDiagram
@@ -1855,19 +1854,19 @@ The evaluation of Aegis.AI was conducted through a multi-dimensional assessment 
 
 **Functional Testing.** Functional testing was implemented using a three-tier testing pyramid: unit tests using Jest v29 for individual module logic, integration tests using Supertest for API endpoint behavior, and end-to-end tests using React Testing Library for frontend component behavior. Tests were organized into 12 Sprint Test Suites aligned with the development sprint structure, with each Sprint Test Suite covering the User Stories delivered within that sprint.
 
-**Performance Benchmarking.** Performance benchmarks were conducted using Apache JMeter with test scenarios calibrated to simulate concurrent governance activity representative of a 50-user organizational deployment. Benchmark metrics collected included mean response time, 95th percentile response time, and error rate under load (presented in Table 13).
+**Performance Benchmarking.** Performance benchmarks were conducted using Apache JMeter with test scenarios calibrated to simulate concurrent governance activity representative of a 50-user organizational deployment. Benchmark metrics collected included mean response time, 95th percentile response time, and error rate under load (presented in Table 5.2).
 
-**LLM Evaluation Metric Validation.** The DeepEval evaluation pipeline was validated against a curated dataset of 50 LLM interactions (results detailed in Table 15) spanning three model types (GPT-4o, Claude 3.5 Sonnet, and GPT-3.5-turbo as baseline) across five governance-relevant task categories: regulatory question answering, risk description generation, policy document drafting, compliance control assessment, and incident summarization.
+**LLM Evaluation Metric Validation.** The DeepEval evaluation pipeline was validated against a curated dataset of 50 LLM interactions (results detailed in Table 5.4) spanning three model types (GPT-4o, Claude 3.5 Sonnet, and GPT-3.5-turbo as baseline) across five governance-relevant task categories: regulatory question answering, risk description generation, policy document drafting, compliance control assessment, and incident summarization.
 
 **Multi-Tenant Isolation Verification.** Security isolation testing employed a systematic cross-tenant access attempt protocol in which authenticated API clients for Tenant A attempted to access governance objects belonging to Tenant B via direct database record ID manipulation, schema injection attempts in API parameters, and JWT token modification attempts.
 
-**Total Test Coverage.** Across all testing dimensions, 258 test cases were executed (summarized in Table 12), achieving a 100% pass rate. The platform achieved an overall system accuracy of 99% across all evaluated functional dimensions.
+**Total Test Coverage.** Across all testing dimensions, 258 test cases were executed (summarized in Table 5.1), achieving a 100% pass rate. The platform achieved an overall system accuracy of 99% across all evaluated functional dimensions.
 
 The evaluation strategy comprised three complementary empirical approaches (Zhu et al., 1997): (1) functional black-box acceptance testing across all 58 user stories (spanning Sprints 1 through 12) using live browser-based User Acceptance Testing (UAT); (2) API performance benchmarking under simulated concurrent organizational load; and (3) security isolation testing to verify strict schema-per-tenant data segregation. Across all twelve sprint iterations, all 58 user stories totaling 329 committed story points achieved Done status (100% delivery rate, as documented in Appendices A and B). All 258 defined system test cases across the twelve sprint test suites passed without regression. Optional third-party cloud credential integrations (such as external enterprise SMTP servers, hosted MLflow tracking servers, and paid LLM API key provisioning) are documented as operational deployment options in Section 6.4.
 
 ## 5.2 Functional Testing Results
 
-*Figure 23: LLM Evaluation and AI Advisor Domain Class Diagram, Defining LLM Judge Metrics (Correctness, Faithfulness, Contextual Relevancy, Hallucination), API Key Vault Entities, and Model Arena Benchmarks.*
+*Figure 5.1: LLM Evaluation and AI Advisor Domain Class Diagram, Defining LLM Judge Metrics (Correctness, Faithfulness, Contextual Relevancy, Hallucination), API Key Vault Entities, and Model Arena Benchmarks.*
 
 ```mermaid
 classDiagram
@@ -1925,7 +1924,7 @@ classDiagram
     LLMApiKey ..> LLMArenaComparison : configures
 ```
 
-*Table 12*
+*Table 5.1*
 
 *Functional Test Case Results Summary*
 
@@ -1951,7 +1950,7 @@ Test coverage was measured at 87% line coverage for backend modules and 82% stat
 
 ## 5.3 Performance Benchmarks
 
-*Figure 24: LLM API Key Encryption and Management Sequence Diagram, Illustrating AES-256 Key Encryption at Rest, Role-Based Access Enforcement, and Masked Key Verification Flow.*
+*Figure 5.2: LLM API Key Encryption and Management Sequence Diagram, Illustrating AES-256 Key Encryption at Rest, Role-Based Access Enforcement, and Masked Key Verification Flow.*
 
 ```mermaid
 sequenceDiagram
@@ -1982,7 +1981,7 @@ sequenceDiagram
 
 **API Response Time Benchmarks.** API response time benchmarks were conducted using Apache JMeter with a gradual ramp-up from 1 to 50 concurrent virtual users over a 120-second period, maintaining steady-state load for 300 seconds per test scenario.
 
-*Table 13*
+*Table 5.2*
 
 *API Response Time Benchmarks (50 Concurrent Users)*
 
@@ -2002,9 +2001,9 @@ sequenceDiagram
 
 The benchmark results demonstrate that Aegis.AI's API tier comfortably satisfies the target of sub-50ms mean response times for standard read operations. The 0.00% error rate across all endpoint categories under 50-concurrent-user load confirms that the connection pooling configuration (pool.max: 20 connections per service instance) is appropriately sized for the tested workload.
 
-**PDF Report Generation Performance.** Table 14 presents Playwright-based PDF report generation performance across report types.
+**PDF Report Generation Performance.** Table 5.3 presents Playwright-based PDF report generation performance across report types.
 
-*Table 14*
+*Table 5.3*
 
 *PDF Report Generation Performance*
 
@@ -2020,7 +2019,7 @@ The benchmark results demonstrate that Aegis.AI's API tier comfortably satisfies
 
 ## 5.4 LLM Evaluation Metrics
 
-*Figure 25: Reporting Engine, Global Search, and AI Trust Center Class Diagram, Modeling Playwright PDF Generation Parameters, Multi-Format Export Pipelines, and Public Trust Center Metric Aggregators.*
+*Figure 5.3: Reporting Engine, Global Search, and AI Trust Center Class Diagram, Modeling Playwright PDF Generation Parameters, Multi-Format Export Pipelines, and Public Trust Center Metric Aggregators.*
 
 ```mermaid
 classDiagram
@@ -2079,7 +2078,7 @@ classDiagram
 
 LLM evaluation benchmark results were generated using the EvalServer against a 50-item curated test dataset. Three models were evaluated: GPT-4o (OpenAI), Claude 3.5 Sonnet (Anthropic), and GPT-3.5-turbo (OpenAI, used as baseline).
 
-*Table 15*
+*Table 5.4*
 
 *LLM Evaluation Metric Results (50-Item Test Dataset)*
 
@@ -2096,7 +2095,7 @@ The evaluation results demonstrate meaningful performance differences between th
 
 ## 5.5 Multi-Tenant Security Isolation Verification
 
-*Figure 26: Multi-Framework Compliance Report Generation Sequence Diagram, Tracing Asynchronous Background Job Scheduling, Data Fetching, Headless Browser PDF Compilation, and Secure Artifact Retrieval.*
+*Figure 5.4: Multi-Framework Compliance Report Generation Sequence Diagram, Tracing Asynchronous Background Job Scheduling, Data Fetching, Headless Browser PDF Compilation, and Secure Artifact Retrieval.*
 
 ```mermaid
 sequenceDiagram
@@ -2140,7 +2139,7 @@ The complete absence of successful cross-tenant data access across 80 security t
 
 ## 5.7 Comparative Analysis
 
-*Table 16*
+*Table 5.5*
 
 *Platform Feature Comparison Matrix*
 
@@ -2163,7 +2162,7 @@ The complete absence of successful cross-tenant data access across 80 security t
 
 *Note.* Feature assessments based on publicly available documentation as of 2025. N/A = not applicable or not publicly documented.
 
-The comparative analysis presented in Table 16 demonstrates that Aegis.AI provides a feature set that either matches or exceeds commercial platforms on the majority of evaluated dimensions, while uniquely offering self-hosted deployment, complete multi-framework coverage, integrated LLM evaluation, and an open licensing model. The most significant differentiation is the combination of self-hosting capability and LLM evaluation integration, a pairing not available in any existing commercial or open-source platform identified in the literature review.
+The comparative analysis presented in Table 5.5 demonstrates that Aegis.AI provides a feature set that either matches or exceeds commercial platforms on the majority of evaluated dimensions, while uniquely offering self-hosted deployment, complete multi-framework coverage, integrated LLM evaluation, and an open licensing model. The most significant differentiation is the combination of self-hosting capability and LLM evaluation integration, a pairing not available in any existing commercial or open-source platform identified in the literature review.
 
 
 ---
@@ -2366,7 +2365,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## Sprint Backlog Summary (Sprints 1-12)
 
-*Table 17*
+*Table A.1*
 
 *Sprint Backlog Summary (Sprints 1-12)*
 
@@ -2394,7 +2393,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## User Story Catalogue
 
-*Table 18*
+*Table B.1*
 
 *User Story Catalogue, Aegis.AI v1.0 *
 
@@ -2453,7 +2452,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## System Test Case Summary
 
-*Table 19*
+*Table C.1*
 
 *Sprint Test Case Summary (Representative Sample)*
 
@@ -2504,7 +2503,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## API Endpoint Catalogue
 
-*Table 20*
+*Table D.1*
 
 *Aegis.AI REST API Endpoint Catalogue (Selected)*
 
@@ -2561,7 +2560,7 @@ Zhu, H., Hall, P. A. V., & May, J. H. R. (1997). Software unit test coverage and
 
 ## Database Schema Overview
 
-*Table 21*
+*Table E.1*
 
 *Core Database Tables, Aegis.AI v1.0 Schema (Per Tenant)*
 
