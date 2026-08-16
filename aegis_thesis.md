@@ -190,7 +190,7 @@ The rapid proliferation of artificial intelligence systems across critical secto
 
 All praise is due to Allah (SWT), the Most Gracious and Most Merciful, for granting me the strength, patience, and clarity of thought required to complete this research.
 
-I would like to express my sincere gratitude to my supervisor, **Usama Ahmed**, Assistant Professor, Department of Artificial Intelligence, University of Management and Technology, Lahore, for his invaluable guidance, constructive feedback, and unwavering support throughout the duration of this project. His expertise in AI systems and governance significantly shaped the direction and quality of this work.
+I would like to express my sincere gratitude to my supervisor, **Usama Ahmed**, Lecturer, Department of Artificial Intelligence, University of Management and Technology, Lahore, for his invaluable guidance, constructive feedback, and unwavering support throughout the duration of this project. His expertise in AI systems and governance significantly shaped the direction and quality of this work.
 
 I am also grateful to the faculty and staff of the Department of Artificial Intelligence, UMT, for providing the academic foundation and technical resources necessary to undertake a project of this scope.
 
